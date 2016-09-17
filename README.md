@@ -17,8 +17,8 @@ Angular2 for [Dart][dart] can be found at [dart-lang/angular2][ng2dart].
 
 Angular is a development platform for building mobile and desktop web applications. 
 
-I will be pushing my code and mini-projects (and experiences <:-)) in this Angluar2 repo.
-I've decided to teach myself Angular2 as I am currently taking AngularJS course (which is part of Ruby on Rails Web Development Specialisation) with the [Johns Hopkins University](https://ep.jhu.edu/programs-and-courses/coursera)  via [Coursera](https://www.coursera.org/specializations/ruby-on-rails) platform.
+I will be pushing my code and mini-projects (and experiences <:-)) in this AngluarJS 2.0 repo.
+I've decided to teach myself AngularJS 2.0 Beta as I am currently taking AngularJS 1.x course (which is part of Ruby on Rails Web Development Specialisation) with the [Johns Hopkins University](https://ep.jhu.edu/programs-and-courses/coursera)  via [Coursera](https://www.coursera.org/specializations/ruby-on-rails) platform.
 
 
 
@@ -41,6 +41,8 @@ The Node.js project is supported by the
 ### 2. TypeScript
 
 [![Join the chat at https://gitter.im/Microsoft/TypeScript](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Microsoft/TypeScript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+I'm using Typescript compiler with Browser Sync for my coding. 
 
 [TypeScript](http://www.typescriptlang.org/) is a language for application-scale JavaScript. TypeScript adds optional types, classes, and modules to JavaScript. TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the [playground](http://www.typescriptlang.org/Playground), and stay up to date via [our blog](https://blogs.msdn.microsoft.com/typescript) and [Twitter account](https://twitter.com/typescriptlang).
 
