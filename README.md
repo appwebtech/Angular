@@ -162,17 +162,16 @@ I'm currently running OSX 10.11.6 El-Capitan in both my machines and I followed 
 
 It ran the installation and hang at "Installing packages for tooling via npm"
 
-I aborted the installation, cleaned the cache and re-ran it once again. This time it installed up to the end but thre another error. ```Could not start watchman```I knew this was server related and after using almost half of my Sunday afternoon, you can imagine the frustrations and a lil  bit of cursing. 
+I aborted the installation, cleaned the cache and re-ran it once again. This time it installed up to the end but there was another error. ```Could not start watchman``` I knew this was server related and after using almost half of my Sunday afternoon, you can imagine the frustrations and a tad  bit of cursing. 
 <:-)
 
 I ran the server command and as expected, ng serve couldn't start watchman thus it fell back to NodeWatcher for file system events. 
 
 Then something happened, which I relate to my VPN server deactivated. I killed it whilst making installations for Node, npm and angular-cli. I got an outgoing connection to fetch dependencies at *http://ember-cli.com** and I let it do it's thing. (I rarely allow such kind of data fetching if not requesting gem files and/or dependencies from GitHub.)
 
-Bash started building modules, optimizing assets and hashing; e voila! NG Live Development Server launched locally at port 4200. 
+Bash started building modules, optimizing assets and hashing; et voila! NG Live Development Server launched locally at port 4200. 
 
 Everything seems to be wroking great as of now and feeling like a Cow Boy, Not this [Cowboy](http://www.bidcoafrica.com/products/item/16/cowboy) but this other [Cowboy](https://www.peintures-tableaux.com/Far-West-cowboy-Far-West.html), it's time to code until sleep do me part with my computers. 
-
 
 
 ## Developer
