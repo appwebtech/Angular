@@ -60,7 +60,7 @@ For our nightly builds:
 npm install -g typescript@next
 ```
 
-### Typings
+###3. Typings
 
 # ![Typings](https://cdn.rawgit.com/typings/typings/master/logo.svg)
 
@@ -115,6 +115,64 @@ typings install debug --save
 ```
 
 The [public registry](https://github.com/typings/registry) is maintained by the community, and is used to resolve official type definitions for JavaScript packages.
+
+### 4. Angular-CLI
+
+[![Join the chat at https://gitter.im/angular/angular-cli](https://badges.gitter.im/angular/angular-cli.svg)](https://gitter.im/angular/angular-cli?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![Build Status][travis-badge]][travis-badge-url]
+[![Dependency Status][david-badge]][david-badge-url]
+[![devDependency Status][david-dev-badge]][david-dev-badge-url]
+[![npm][npm-badge]][npm-badge-url]
+
+Prototype of a CLI for Angular 2 applications based on the [ember-cli](http://www.ember-cli.com/) project.
+
+#### Note
+
+This project is very much still a work in progress.
+
+The CLI is now in beta. 
+If you wish to collaborate while the project is still young, check out [our issue list](https://github.com/angular/angular-cli/issues).
+
+#### Webpack update
+
+We changed the build system between beta.10 and beta.12, from SystemJS to Webpack. 
+And with it comes a lot of benefits. 
+To take advantage of these, your app built with the old beta will need to migrate.
+
+You can update your `beta.10` projects to `beta.12` by following [these instructions](https://github.com/angular/angular-cli/wiki/Upgrading-from-Beta.10-to-Beta.14).
+
+#### Prerequisites
+
+The generated project has dependencies that require **Node 4.x.x and NPM 3.x.x**.
+
+Personally, I had a lot of issues from Deprecation warnings, to Errors stemming from permission to incorrect versions up to unsupported dependencies.
+
+What I did was to uninstall Nodejs & npm, then re-installed them again and ran updates via home brew. 
+
+Many developers using Yosemite were updating angular-cli using a global package like this.
+
+```
+npm uninstall -g angular-cli
+npm cache clean
+npm install -g angular-cli@latest
+```
+
+I'm currently running OSX 10.11.6 El-Capitan in both my machines and I followed what my Yosemite developers were doing but got hit by another error when I ran ```ng new joe``` . "joe" was the app name.
+
+It ran the installation and hang at "Installing packages for tooling via npm"
+
+I aborted the installation, cleaned the cache and re-ran it once again. This time it installed up to the end but thre another error. ```Could not start watchman```I knew this was server related and after using almost half of my Sunday afternoon, you can imagine the frustrations and a lil  bit of cursing. 
+<:-)
+
+I ran the server command and as expected, ng serve couldn't start watchman thus it fell back to NodeWatcher for file system events. 
+
+Then something happened, which I relate to my VPN server deactivated. I killed it whilst making installations for Node, npm and angular-cli. I got an outgoing connection to fetch dependencies at *http://ember-cli.com** and I let it do it's thing. (I rarely allow such kind of data fetching if not requesting gem files and/or dependencies from GitHub.)
+
+Bash started building modules, optimizing assets and hashing; e voila! NG Live Development Server launched locally at port 4200. 
+
+Everything seems to be wroking great as of now and feeling like a Cow Boy, Not this [Cowboy](http://www.bidcoafrica.com/products/item/16/cowboy) but this other [Cowboy](https://www.peintures-tableaux.com/Far-West-cowboy-Far-West.html), it's time to code until sleep do me part with my computers. 
+
 
 
 ## Developer
