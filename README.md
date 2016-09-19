@@ -146,7 +146,7 @@ You can update your `beta.10` projects to `beta.12` by following [these instruct
 
 The generated project has dependencies that require **Node 4.x.x and NPM 3.x.x**.
 
-Personally, I had a lot of issues from Deprecation warnings, to Errors stemming from permission to incorrect versions up to unsupported dependencies.
+Personally, I had a lot of issues from Deprecation warnings, to Errors stemming from permissions, incorrect versions up to unsupported dependencies.
 
 What I did was to uninstall Nodejs & npm, then re-installed them again and ran updates via home brew. 
 
@@ -167,11 +167,11 @@ I aborted the installation, cleaned the cache and re-ran it once again. This tim
 
 I ran the server command and as expected, ng serve couldn't start watchman thus it fell back to NodeWatcher for file system events. 
 
-Then something happened, which I relate to my VPN server deactivated. I killed it whilst making installations for Node, npm and angular-cli. I got an outgoing connection to fetch dependencies at *http://ember-cli.com** and I let it do it's thing. (I rarely allow such kind of data fetching if not requesting gem files and/or dependencies from GitHub.)
+Then something happened, which I relate to my VPN server deactivation. I killed it whilst making installations for Node, npm and angular-cli. I got an outgoing connection to fetch dependencies at *http://ember-cli.com** and I let it do it's thing. (I rarely allow such kind of data fetching if not requesting gem files and/or dependencies from GitHub.)
 
 Bash started building modules, optimizing assets and hashing; et voila! NG Live Development Server launched locally at port 4200. 
 
-Everything seems to be wroking great as of now and feeling like a Cow Boy, Not this [Cowboy](http://www.bidcoafrica.com/products/item/16/cowboy) but this other [Cowboy](https://www.peintures-tableaux.com/Far-West-cowboy-Far-West.html), it's time to code until sleep do me part with my computers. 
+Everything seems to be wroking great as of now and I'm feeling like a Cowboy. Not this [Cowboy](http://www.bidcoafrica.com/products/item/16/cowboy) but this other [Cowboy](https://www.peintures-tableaux.com/Far-West-cowboy-Far-West.html); it's now time to code until sleep do me part with my computers. 
 
 
 ## Developer
