@@ -1,0 +1,37 @@
+<!--
+DEFS:
+What is a module in AngularJS
+A module is a container for different parts of your application i.e controllers, services, directives, filters, etc.
+
+What is a controller in angular
+In angular a controller is a JavaScript function. The job of the controller is to build a model for the view to display. The model is the data. In a real world application, the controller may call into a service to retrieve data from the database.
+
+What is $scope
+$scope is a parameter that is passed to the controller function by angular framework. We attach the model to the $scope object, which will then be available in the view. Within the view, we can retrieve the data from the scope object and display.
+
+
+- First create the module.
+- Then crerate the controller.
+- Then register the controller with the module using controller function. 
+- Call the $scope object to the controller.
+
+-->
+
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script>  
+	<title>Angular Modules and Controllers</title>
+</head>
+<body>
+	<div ng-controller="myController">
+		{{ message }} 
+	</div>
+
+	<div>
+		20 + 30 = {{ 20 + 30 }} <br> <br>
+	</div>
+
+</body>
+</html>

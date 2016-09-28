@@ -37,6 +37,7 @@ Here are some [!Web Apps](https://www.madewithangular.com/#/) developed using An
 Here go the [!Angular API Docs](https://docs.angularjs.org/api)
 
 1. Introduction.
-2. 
+2. Angular modules and controllers.
+3. 
 
 
