@@ -38,6 +38,7 @@ Here go the [!Angular API Docs](https://docs.angularjs.org/api)
 
 1. Introduction.
 2. Angular modules and controllers.
-3. 
+3. Controllers in AngularJS 
+4.
 
 
