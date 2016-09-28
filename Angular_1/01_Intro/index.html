@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="scripts/angular.min.js"></script>
+	<title> Binding Expressions </title>
+</head>
+<body>
+<h1>The first boring stuff!</h1>
+
+<div ng-app>
+	<h2>Evaluated </h2>
+20 + 30 = {{ 20 + 30 }} <br> <br>
+
+
+{{ { name: 'Joe', age : '850' }.name }} - Returns the name property value <br> <br>
+{{ { name: 'Joe', age : '850' }.age  }} - Returns the age property value <br> <br>
+
+<!--Booleans-->
+
+{{ 1 == 2 }} &nbsp &nbsp &nbsp	Boolean false.  <br>
+{{ 1 == 1 }} &nbsp &nbsp &nbsp	Boolean true. <br> <br>
+
+<!--Arrays-->
+
+{{ ['Joe', 'Jody', 'Jona', 'Jobi'][2] }}
+
+</div>
+
+<div>
+	<h2>Not evaluated</h2>
+
+20 + 30 = {{ 20 + 30 }} <br> <br>
+
+{{ { name: 'Joe', age : '850' }.name }} - Doesn't return the name property value <br> <br>
+{{ { name: 'Joe', age : '850' }.age  }} - Doesn't return the age property value
+
+</div>
+
+
+</body>
+</html>

@@ -1,6 +1,16 @@
 
 Angular
 =========
+This Readme documentation is all about AngularJS 2 with most of my relevant experiences in this new Framework. Angular is a client side frontend web application framework which is maintained by Google. 
+
+I decided to separate my learning experiences of Angular_1 and Angular_2 into two separate README.md files in order to keep things clear and avoid confusion. And trust me, you will be sometimes get CORNfused if you take the two frameworks concurrently. 
+
+README.md  --> AngularJS 2
+README2.md --> AngularJS 1
+
+At the time of writing, Angular2 has just switched it's Beta server which was using Broccoli Typescript Compiler to Watchman. It crashes often, it's messy and takes long to scaffold an app. 
+
+
 
 [![Build Status](https://travis-ci.org/angular/angular.svg?branch=master)](https://travis-ci.org/angular/angular)
 [![CircleCI](https://circleci.com/gh/angular/angular/tree/master.svg?style=shield)](https://circleci.com/gh/angular/angular/tree/master)
