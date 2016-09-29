@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script> 
+	<title>AngularJS ng repeat directive</title>
+</head>
+<body ng-app="myModule" style="font-family:Helvetica">
+	<div ng-controller="myController">
+			<table>
+				<thead>
+					<tr>
+						<th>FirstName</th>
+						<th>LastName</th>
+						<th>Gender</th>
+						<th>Salary</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="josembi in employees">
+						<td> {{ josembi.firstName }} </td>
+						<td> {{ josembi.lastName }} </td>
+						<td> {{ josembi.gender }} </td>
+						<td> {{ josembi.salary }} </td>
+					</tr>
+				</tbody>
+	 		</table>
+
+	</div>
+</body>
+</html>

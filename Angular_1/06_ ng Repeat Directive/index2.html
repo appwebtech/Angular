@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script2.js"></script> 
+	<title>AngularJS ng nested repeat</title>
+</head>
+<body ng-app="myModule" style="font-family:Helvetica">
+
+	<div ng-controller="myController" ng-init="parentIndex=$index">
+		<ul ng-repeat="joe in countries">
+			<li>
+				{{ joe.name }} - Index = {{ $index }}
+				<ul>
+					<li ng-repeat="city in joe.cities">
+						{{ city.name }} - Parent Index = {{ parentIndex }}, Index = {{ $index }}
+						
+					</li>
+						
+				</ul>
+			</li>
+				
+		</ul>
+
+	</div>
+
+</body>
+</html>
