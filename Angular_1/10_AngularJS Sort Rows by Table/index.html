@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script>  
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+
+		<table>
+			<thead>
+				<tr>
+					<th ng-click="sortData('name')">
+					Name <div ng-class="getSortClass('name')"></div></th>
+
+					<th ng-click="sortData('dateOfBirth')">
+					Date of Birth <div ng-class="getSortClass('dateOfBirth')"></div></th>
+
+					<th ng-click="sortData('salary')">
+					Gender <div ng-class="getSortClass('salary')"></div></th>
+
+					<th>Salary</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="kasyula in employees | orderBy:sortColumn:reverseSort">
+					<td>{{ kasyula.name  }}</td>
+					<td>{{ kasyula.dateOfBirth | date:"dd/MM/yyyy" }}</td>
+					<td>{{ kasyula.gender  }}</td>
+					<td>{{ kasyula.salary  }}</td>
+					
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+</html>
