@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script>  
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+		Order By: <select ng-model="sortColumn">
+								<option value="name">Name ASC</option>
+								<option value="gender">Gender ASC</option>
+								<option value="dateOfBirth">Date of Birth ASC</option>
+								<option value="-salary">Salary DESC</option>
+							</select>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Date of Birth</th>
+					<th>Gender</th>
+					<th>Salary</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="kasyula in employees | orderBy:sortColumn">
+					<td>{{ kasyula.name  }}</td>
+					<td>{{ kasyula.dateOfBirth | date:"dd/MM/yyyy" }}</td>
+					<td>{{ kasyula.gender  }}</td>
+					<td>{{ kasyula.salary  }}</td>
+					
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+</html>
