@@ -40,5 +40,11 @@ Here go the [!Angular API Docs](https://docs.angularjs.org/api)
 2. Angular modules and controllers.
 3. Controllers in AngularJS.
 4. AngularJS ng src directive.
+5. Two way Databinding.
+6. AngularJS ng Repeat Directive.
+7. Handling events in AngularJS. 
+8. AngularJS Filters. 
+9. Sorting data in AngularJS.
+10. Sorting Rows by Table Header. 
 
 
