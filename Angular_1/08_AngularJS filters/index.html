@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script>  
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+		Rows to Display <input type="number" step="1" min="0" max="8" ng-model="rowLimit" /> 
+		<br /> <br /> 
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Date of Birth</th>
+					<th>Gender</th>
+					<th>Salary (number)</th>
+					<th>Salary (currency)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="kasyula in employees | limitTo:rowLimit">
+					<td>{{ kasyula.name | uppercase }}</td>
+					<td>{{ kasyula.dateOfBirth | date:"dd/MM/yyyy" }}</td>
+					<td>{{ kasyula.gender | lowercase }}</td>
+					<td>{{ kasyula.salary | number:2 }}</td>
+					<td>{{ kasyula.salary | currency:"$" }}</td>
+					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+</body>
+</html>
