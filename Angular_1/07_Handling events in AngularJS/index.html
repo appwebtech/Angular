@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script>  
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Likes</th>
+					<th>Dislikes</th>
+					<th>Like/Dislike</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="joe in technologies">
+
+					<td>{{ joe.name }}</td>
+					<td>{{ joe.likes }}</td>
+					<td>{{ joe.dislikes }}</td>
+					<td>
+						<input type="button" value="Like" ng-click="incrementLikes(joe)">
+						<input type="button" value="Dislike" ng-click="incrementDislikes(joe)">
+					</td>
+					
+				</tr>
+					
+			</tbody>
+		</table>
+			
+	</div>
+	</div>
+
+
+</body>
+</html>
