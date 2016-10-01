@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script> 
+<script src="scripts/filters.js"></script> 
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Salary</th>
+			
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="kiatu in employees">
+					<td>{{ kiatu.name }}</td>
+					<td>{{ kiatu.gender | gender }}</td>
+					<td>{{ kiatu.salary }}</td>
+		
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+
+</body>
+</html>
