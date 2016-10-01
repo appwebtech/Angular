@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script> 
+<script src="scripts/filters.js"></script> 
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">	
+	<input type="checkbox" ng-model="hideSalary" /> Hide Salary <br> <br>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>City</th>
+					<th ng-hide="hideSalary">Salary</th>
+			
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="kiatu in employees">
+					<td>{{ kiatu.name }}</td>
+					<td>{{ kiatu.gender }}</td>
+					<td>{{ kiatu.city }}</td>
+					<td ng-hide="hideSalary">{{ kiatu.salary }}</td>
+		
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+
+</body>
+</html>
