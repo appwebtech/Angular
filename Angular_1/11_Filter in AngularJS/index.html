@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/script.js"></script>  
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng src directive</title>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+
+	<!--You can personalise search results by columns by adding parameters to searchText like: searchText.salary, searchText.gender, searchText.name and what have you. -->
+		Search : <input type="text" placeholder="Search employees" ng-model="searchText" /> <br> <br>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Salary</th>
+					<th>City</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="kiatu in employees | filter:searchText">
+					<td>{{ kiatu.name }}</td>
+					<td>{{ kiatu.gender }}</td>
+					<td>{{ kiatu.salary }}</td>
+					<td>{{ kiatu.city }}</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+
+</body>
+</html>
