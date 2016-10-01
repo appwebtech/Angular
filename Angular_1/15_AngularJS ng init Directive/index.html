@@ -1,0 +1,40 @@
+<!-- USING NG-INIT (NOT RECCOMMENDED FOR REAL WORLD APPS.) SEE INDEX2:HTML
+ FOR THE RECCOMENDED CONTROLLER OPTION-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="scripts/angular.min.js"></script>
+<link href="css/styles.css" rel="stylesheet" />
+	<title>AngularJS ng init directive</title>
+</head>
+<body ng-app>
+	<div ng-init="employees = [
+ 									 { name: 'Ben', gender: 'Male', city: 'London' },
+ 									 { name: 'Jody', gender: 'Male', city: 'Spain' },
+ 									 { name: 'Joe', gender: 'Male', city: 'Edinburgh' },
+ 									 { name: 'Jane', gender: 'Female', city: 'Bratislava' },
+ 									 { name: 'Angela', gender: 'Female', city: 'Prague' },
+ 									 { name: 'Edward', gender: 'Male', city: 'Dortmund' },
+ 									 { name: 'John', gender: 'Female', city: 'Venice'}
+ 										]">	
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Gender</th>
+			<th>City</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="hustler in employees">
+			<td> {{ hustler.name }} </td>
+			<td> {{ hustler.gender }} </td>
+			<td> {{ hustler.city }} </td>	
+		</tr>
+	</tbody>
+</table>
+
+	</div>
+</body>
+</html>
