@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts/angular.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<title></title>
+</head>
+<body>
+
+	<table style="font-family: Arial">
+    <tr>
+        <td colspan="2" class="header">
+            <h1>
+                WebSite Header
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td class="leftMenu">
+            <a href="#/home">Home</a>
+            <a href="#/mangoes">Mangoes</a>
+            <a href="#/other_fruits">Other Fruits</a>
+        </td>
+        <td class="mainContent">
+        <!--Partial Templates will be injected below-->
+            <ng-view></ng-view>  
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="footer">
+            <b>Website Footer</b>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
