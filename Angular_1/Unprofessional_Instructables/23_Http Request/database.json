@@ -1,0 +1,24 @@
+{
+	"records": [
+			{
+				"Name":"Mulwa",
+				"Age":"88",
+				"Profession": "Politician"
+			},
+			{
+				"Name": "Jovi",
+				"Age": "47",
+				"Profession": "Musician"
+			},
+			{
+				"Name": "Waititu",
+				"Age": "72",
+				"Profession": "Stone Thrower"
+			},
+			{
+				"Name": "Sonko",
+				"Age": "41",
+				"Profession": "Bling bling"
+			}
+	]
+}
