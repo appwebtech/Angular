@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS | $http Service!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="angular-route.min.js"></script>
+	<script src="controller2.js"></script>
+</head>
+
+
+<body ng-app="mainApp">
+	<h1>Kenya's Politicians.</h1><hr>
+	<p>The following is a list of some of the funniest Kenya's politicians. Use the box filter below and type a name to filter the politician of your choice.</p><br>
+	<p>This would work best if we had  a lot of data in the json.</p>
+	
+
+	<div ng-controller="people">
+		<ul>
+			<h3>Names And Age of Funny Politicians Near my Place:</h3>
+			<!--Filter Stuff with the search box-->
+			<li ng-repeat="josembi in persons | filter: globalSearch">
+				{{ 'Name: ' + josembi.Name + 'Age: '  + josembi.Age + 'Profession: '  +  josembi.Profession }}
+			</li>
+		</ul>
+		
+	</div>
+
+	<div id="tafutaMambo">
+		<b>Global Search Filter:</b> <input type="text" ng-model="globalSearch.$"><br>
+		<b>Name Search Filter:</b><input type="text" ng-model="globalSearch.Name"><br>
+		<b>Age Search Filter:</b><input type="text" ng-model="globalSearch.Age"><br>
+		<b>Profession Search Filter:</b><input type="text" ng-model="globalSearch.Profession"><br>
+	</div>
+
+</body>
+</html>

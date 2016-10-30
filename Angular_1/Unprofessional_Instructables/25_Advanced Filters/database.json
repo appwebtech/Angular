@@ -1,0 +1,74 @@
+{
+	"records": [
+			{
+				"Name":"Mulwa",
+				"Age":"88",
+				"Profession": "Politician"
+			},
+			{
+				"Name": "Jovi",
+				"Age": "47",
+				"Profession": "Musician"
+			},
+			{
+				"Name": "Waititu",
+				"Age": "72",
+				"Profession": "Stone Thrower"
+			},
+			{
+				"Name": "Sonko",
+				"Age": "41",
+				"Profession": "Bling bling"
+			},
+			{
+				"Name": "Kalonzo",
+				"Age": "41",
+				"Profession": "Farmer: Grows Water melons"
+			},
+			{
+				"Name": "Margaret Wanjiru",
+				"Age": "60",
+				"Profession": "Con Woman in god"
+			},
+			{
+				"Name": "Miguna Miguna",
+				"Age": "62",
+				"Profession": "Vocabulary Swagger"
+			},
+			{
+				"Name": "Kibaki",
+				"Age": "41",
+				"Profession": "Baba Jimmy"
+			},
+			{
+				"Name": "Uhuru",
+				"Age": "53",
+				"Profession": "Kijana Prezoo"
+			},
+			{
+				"Name": "Ruto",
+				"Age": "50",
+				"Profession": "Heckler"
+			},
+			{
+				"Name": "Alfred Mutua",
+				"Age": "48",
+				"Profession": "Maendeleo Politician"
+			},
+			{
+				"Name": "Kidero",
+				"Age": "60",
+				"Profession": "Slapper"
+			},
+			{
+				"Name": "Shebesh",
+				"Age": "55",
+				"Profession": "Student: Learning to turn the other chick"
+			},
+			{
+				"Name": "Njoho",
+				"Age": "58",
+				"Profession": "ODM's Muppet"
+			}
+	]
+}
