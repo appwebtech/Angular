@@ -1,0 +1,31 @@
+<!--
+Using ng-repeat="i in [1]"
+[1] is the number of times it will repeat itself. 
+
+Using different scopes and Passing data between them.
+Solve this by attaching a property in the scope eg josembi in this case.
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS | Passind Data Between Different Scopes.</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="angular-route.min.js"></script>
+	<script src="controller2.js"></script>
+</head>
+
+
+<body ng-app="mainApp">
+	<input type="text" ng-model="message.josembi">
+
+	<p ng-repeat="i in [1]">
+		<input type="text" ng-model="message.josembi">
+		You Wrote: {{ message.josembi }}
+	</p>
+	[Outer] You wrote: {{ message.josembi }}
+</body>
+</html>
