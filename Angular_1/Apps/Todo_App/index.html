@@ -5,14 +5,16 @@
 	<meta charset="UTF-8">
 	<title>AngularJS | To do List App.</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-	<body ng-app="joSembi">
-		<h1>Add a Task</h1>
-		<input type="text" class="joe">
+	<body ng-app="joSembi" ng-controller="app">
+		<h1 class="h1">Add a Task and press Enter!</h1>
+
+		<!-- ng-keyup directive will allow as to save data on browser after pressing the carriage return.-->
+		<input ng-model="task" ng-keyup="searchEnter()" type="text" class="joe">
 			
-		</input>
 		
 	</body>
 </html>
