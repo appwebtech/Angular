@@ -10,10 +10,23 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 	<body ng-app="joSembi" ng-controller="app">
-		<h1 class="h1">Add a Task and press Enter!</h1>
+		<h1 class="heading">Add a Task and press Enter!</h1>
 
 		<!-- ng-keyup directive will allow as to save data on browser after pressing the carriage return.-->
 		<input ng-model="task" ng-keyup="searchEnter()" type="text" class="joe">
+
+		<!--Enable Task Visibility on Browser-->
+		<div id="tasksToShow">
+			<ul>
+				<li ng-repeat="oneTask in tasks">
+
+					<span class="done-{{oneTask.status}} span1">{{ oneTask.taskMessage }}
+					<input type="checkbox" ng-model="oneTask.status">
+					</span>
+				</li>
+			</ul>
+			
+		</div>
 			
 		
 	</body>

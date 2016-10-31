@@ -9,11 +9,12 @@ appWebTech.controller('app', function($scope){
 		if(event.which == 13 && $scope.task != ""){
 			$scope.addTask();
 		}
+
 	};
 	$scope.addTask = function(){   // Will transfer text from textbox to browser.
 
-			$scope.tasks.push($scope.task);
-			console.log($scope.task);
+			$scope.tasks.push({'taskMessage':$scope.task, 'status':false});
+			console.log($scope.tasks);
 			$scope.task = "";
 	};
 });

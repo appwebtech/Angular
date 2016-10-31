@@ -8,6 +8,14 @@
 	border-color: red;
 }
 
-.h1{
+.heading{
 	text-align: center;
+	text-decoration-style: lucida;
+
+}
+
+.span1.done-true{
+	color: gray;
+	font-style: italic;
+	text-decoration: line-through;
 }
