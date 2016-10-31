@@ -19,3 +19,5 @@ application.controller('app', function($scope, random){ // Pass both $scope and 
 //-----------> Services in AngularJS are singletons 
 //--------> RAN SERVICE. (First Click on Button)
 //--------> PASSED THE REFERENCE OF THE SERVICE AND NOT THE SERVICE ITSELF. (Second Click)
+//This is pretty handy if you are getting data from a server and want to display it on the controller. 
+//It's way much convenient to use Angular than vanilla JS for such operations.
