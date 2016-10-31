@@ -1,0 +1,22 @@
+<!--
+Angular Digest calls the Digest Cycle to check whether the $watch has been updated.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS | Angular Digest.</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="angular-route.min.js"></script>
+	<script src="controller2.js"></script>
+</head>
+
+
+	<body ng-app="mainApp" ng-controller="app">
+		<span>{{ myRandomNumber }}</span> <br>
+		
+		<input type="button" value="Create New Random Number">
+	</body>
+</html>
