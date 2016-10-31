@@ -1,0 +1,22 @@
+<!--
+Services will allow data in different controllers via different services like PHP in the server side, etc.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS | Services.</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="controller2.js"></script>
+</head>
+
+
+	<body ng-app="mainApp" ng-controller="app">
+		<button ng-click="generateRandom()">
+			Generate Random Number
+		</button> <br>
+			{{ randomNumber }}
+	</body>
+</html>
