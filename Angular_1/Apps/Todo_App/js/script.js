@@ -17,4 +17,9 @@ appWebTech.controller('app', function($scope){
 			console.log($scope.tasks);
 			$scope.task = "";
 	};
+	$scope.contentEdit = function(){
+		console.log('josembi');
+		event.target.contentEditable = event.target.contentEditable;
+
+	};
 });

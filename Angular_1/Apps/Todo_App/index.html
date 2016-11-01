@@ -19,10 +19,13 @@
 		<div id="tasksToShow">
 			<ul>
 				<li ng-repeat="oneTask in tasks">
-
-					<span class="done-{{oneTask.status}} span1">{{ oneTask.taskMessage }}
 					<input type="checkbox" ng-model="oneTask.status">
+
+		<!-- Register a double click event -->
+					<span class="jose" contentEditable="false" ng-dblclick="contentEdit()" ng-model="oneTask.taskMessage" class="done-{{oneTask.status}} span1">{{ oneTask.taskMessage }}
+					
 					</span>
+					<input hidden>
 				</li>
 			</ul>
 			

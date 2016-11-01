@@ -19,3 +19,9 @@
 	font-style: italic;
 	text-decoration: line-through;
 }
+
+.jose {
+	background: lightgrey;
+	padding: 3px;
+	border-radius: 10px;
+}
