@@ -1,14 +1,30 @@
 
+<div align="center">
+<h1>AngularJS</h1> 
+<h2>Software Development Documentation</h2>
+  
+
+<div align="center">
+  <sub>Handouts by
+  <a href="https://github.com/appwebtech">Joseph Mwania</a>
+    
+  </a>
+</div>
+</sub>
+</div>
+
+## Introduction
+
+Here are some handouts of some old notes that I've come across whilst doing system housekeeping. I used them when navigating myself through the murky waters of Javascript frameworks and precisely angular. As you will notice (coded during Yosemite era), the notes are old and development environment and stack may vary at present time.
+
+I've tossed most of the Angular2 apps created as they are huge and GitHub won't upload them due to their size.
+
 Angular
 =========
-This Readme documentation is all about AngularJS 2 with most of my relevant experiences in this new Framework. Angular is a client side frontend web application framework which is maintained by Google. 
+This Readme documentation is all about AngularJS and Angular2 with most of my relevant experiences in this new Framework. Angular is a client side frontend web application framework which is maintained by Google. 
 
-I decided to separate my learning experiences of Angular_1 and Angular_2 into two separate README.md files in order to keep things clear and avoid confusion. And trust me, you will be sometimes get CORNfused if you take the two frameworks concurrently. 
 
-README.md  --> AngularJS 2
-README2.md --> AngularJS 1
-
-At the time of writing, Angular2 has just switched it's Beta server which was using Broccoli Typescript Compiler to Watchman. It crashes often, it's messy and takes long to scaffold an app. 
+At the time of writing, Angular2 had just switched it's Beta server which was using Broccoli Typescript Compiler to Watchman. It crashes often, it's messy and takes long to scaffold an app. 
 
 
 
@@ -37,7 +53,7 @@ I've decided to teach myself AngularJS 2.0 Beta as I am currently taking Angular
 
 ### 1. Nodejs.
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/nodejs/node?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/29/badge)](https://bestpractices.coreinfrastructure.org/projects/29)
+ [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/29/badge)](https://bestpractices.coreinfrastructure.org/projects/29)
 
 Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js
 uses an event-driven, non-blocking I/O model that makes it lightweight and
@@ -186,7 +202,7 @@ Everything seems to be wroking great as of now and I'm feeling like a Cowboy. No
 
 ## Developer
 
-Any professional development mock-ups will have a repo of their own hence any mini-projects referenced here will be non-professional and thus may be buggy;
+Any professional development mock-ups will reside in a repo of their own whilst any mini-projects referenced here will be non-professional and thus may be buggy;
 
 ```
 NB: 
@@ -199,18 +215,23 @@ Additionally, as an open-source enthusiast source code is granted as per MIT lic
 ```
 
 
-Joseph M Mwania. 
 
 ## Contacts
-Development done by;
-Joseph M Mwania
 
-http://www.theappwebtech.com/
+[GitHub](https://github.com/appwebtech)
 
-https://twitter.com/appwebtech
+[Appwebtech](http://www.theappwebtech.com/)
 
-https://www.facebook.com/theappwebtech/
+[Twitter](https://twitter.com/appwebtech)
+
+[Facebook](https://www.facebook.com/appwebtech/)
+
+[Pinterest](https://it.pinterest.com/appwebtech/)
+
+[Google +](https://plus.google.com/u/1/104000565731100573953)
+
+[LinkedIn](https://www.linkedin.com/company/18389649/admin/updates/)
 
 ## License
 
-MIT License. Copyright 2016 Appwebtech. http://theappwebtech.com 
+Available as open source under [MIT License](https://opensource.org/licenses/MIT)

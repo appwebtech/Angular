@@ -18,8 +18,12 @@ appWebTech.controller('app', function($scope){
 			$scope.task = "";
 	};
 	$scope.contentEdit = function(){
-		console.log('josembi');
-		event.target.contentEditable = event.target.contentEditable;
-
+		// console.log('josembi');
+		event.target.contentEditable = event.target.contentEditable == "false" ? "true" : "false";
 	};
+	$scope.enterAgain = function(){
+		if(event.which == 13 && $scope.task != ""){
+			$scope.contentEdit();
+		}
+	}
 });
